@@ -1,0 +1,203 @@
+﻿<Window x:Class="ChristmasTime.TicTacToe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChristmasTime"
+        mc:Ignorable="d"
+        Title="TicTacToe" Height="873.445" Width="1293.782">
+    <Border>
+        <Grid>
+            <Grid x:Name="Board1" Height="210" Margin="462,50,0,580" VerticalAlignment="Center" HorizontalAlignment="Left" Width="210">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="TopLeft" Content="" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Width="70" Height="70"/>
+                <Button x:Name="TopMiddle" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="1" Height="70" FontSize="48" FontFamily="Showcard Gothic" Click="TicTacToe_Click"/>
+                <Button x:Name="TopRight" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="2" Height="70" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+                <Button x:Name="CenterRight" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="2" Height="70" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Grid.Row="1"/>
+                <Button x:Name="BottomLeft" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70" Grid.Row="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+                <Button x:Name="BottomMiddle" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70" Grid.Row="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Grid.Column="1"/>
+                <Button x:Name="CenterLeft" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70" Grid.Row="1" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+                <Button x:Name="CenterMiddle" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="1" Height="70" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Grid.Row="1"/>
+                <Button x:Name="BottomRight" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="2" Height="70" Grid.Row="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+            </Grid>
+            <Grid x:Name="Board2" Height="214" Margin="732,50,0,580" VerticalAlignment="Center" HorizontalAlignment="Left" Width="210">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="TopLeft1" Content="" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="71"/>
+                <Button x:Name="TopMiddle1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="1" Height="70" FontSize="48" FontFamily="Showcard Gothic" Click="TicTacToe_Click"/>
+                <Button x:Name="TopRight1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="2" Height="70" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+                <Button x:Name="CenterRight1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="2" Height="71" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Margin="0,70,0,0" Grid.RowSpan="2"/>
+                <Button x:Name="BottomLeft1" Content="" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="70" Height="72" Grid.Row="1" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Margin="0,0,0,1" Grid.RowSpan="2"/>
+                <Button x:Name="BottomMiddle1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="72" Grid.Row="1" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Grid.Column="1" Margin="0,70,0,0" Grid.RowSpan="2"/>
+                <Button x:Name="CenterLeft1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70" Grid.Row="1" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+                <Button x:Name="CenterMiddle1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="1" Height="71" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Margin="0,70,0,0" Grid.RowSpan="2"/>
+                <Button x:Name="BottomRight1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="2" Height="72" Grid.Row="1" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Margin="0,70,0,0" Grid.RowSpan="2"/>
+            </Grid>
+            <Grid x:Name="Board3" Height="210" Margin="1002,50,0,580" VerticalAlignment="Center" HorizontalAlignment="Left" Width="210">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="70"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="TopLeft2" Content="" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70"/>
+                <Button x:Name="TopMiddle2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="1" Height="70" FontSize="48" FontFamily="Showcard Gothic" Click="TicTacToe_Click"/>
+                <Button x:Name="TopRight2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="2" Height="70" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+                <Button x:Name="CenterRight2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="2" Height="70" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Grid.Row="1"/>
+                <Button x:Name="BottomLeft2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70" Grid.Row="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+                <Button x:Name="BottomMiddle2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70" Grid.Row="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Grid.Column="1"/>
+                <Button x:Name="CenterLeft2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70" Grid.Row="1" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+                <Button x:Name="CenterMiddle2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="1" Height="70" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Grid.Row="1"/>
+                <Button x:Name="BottomRight2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="2" Height="70" Grid.Row="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+            </Grid>
+            <Grid x:Name="Board4" Height="210" Margin="462,290,0,335" VerticalAlignment="Center" HorizontalAlignment="Left" Width="210">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="TopLeft3" Content="" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Width="70" Height="70"/>
+                <Button x:Name="TopMiddle3" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="1" Height="70" FontSize="48" FontFamily="Showcard Gothic" Click="TicTacToe_Click"/>
+                <Button x:Name="TopRight3" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="2" Height="70" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+                <Button x:Name="CenterRight3" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="2" Height="70" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Grid.Row="1"/>
+                <Button x:Name="BottomLeft3" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70" Grid.Row="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+                <Button x:Name="BottomMiddle3" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70" Grid.Row="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Grid.Column="1"/>
+                <Button x:Name="CenterLeft3" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70" Grid.Row="1" Grid.RowSpan="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+                <Button x:Name="CenterMiddle3" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="1" Height="70" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Grid.Row="1"/>
+                <Button x:Name="BottomRight3" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="2" Height="70" Grid.Row="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+            </Grid>
+            <Grid x:Name="Board5" Height="210" Margin="732,290,0,335" VerticalAlignment="Center" HorizontalAlignment="Left" Width="210">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="TopLeft4" Content="" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70"/>
+                <Button x:Name="TopMiddle4" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="1" Height="70" FontSize="48" FontFamily="Showcard Gothic" Click="TicTacToe_Click"/>
+                <Button x:Name="TopRight4" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="2" Height="70" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+                <Button x:Name="CenterRight4" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="2" Height="70" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Grid.Row="1"/>
+                <Button x:Name="BottomLeft4" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70" Grid.Row="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+                <Button x:Name="BottomMiddle4" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70" Grid.Row="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Grid.Column="1"/>
+                <Button x:Name="CenterLeft4" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70" Grid.Row="1" Grid.RowSpan="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+                <Button x:Name="CenterMiddle4" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="1" Height="70" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Grid.Row="1"/>
+                <Button x:Name="BottomRight4" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="2" Height="70" Grid.Row="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+            </Grid>
+            <Grid x:Name="Board6" Height="210" Margin="1002,290,0,335" VerticalAlignment="Center" HorizontalAlignment="Left" Width="210">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="TopLeft5" Content="" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70"/>
+                <Button x:Name="TopMiddle5" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="1" Height="70" FontSize="48" FontFamily="Showcard Gothic" Click="TicTacToe_Click"/>
+                <Button x:Name="TopRight5" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="2" Height="70" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+                <Button x:Name="CenterRight5" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="2" Height="70" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Grid.Row="1"/>
+                <Button x:Name="BottomLeft5" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70" Grid.Row="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+                <Button x:Name="BottomMiddle5" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70" Grid.Row="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Grid.Column="1"/>
+                <Button x:Name="CenterLeft5" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70" Grid.Row="1" Grid.RowSpan="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+                <Button x:Name="CenterMiddle5" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="1" Height="70" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Grid.Row="1"/>
+                <Button x:Name="BottomRight5" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="2" Height="70" Grid.Row="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+            </Grid>
+            <Grid x:Name="Board7" Height="210" Margin="462,545,0,90" VerticalAlignment="Center" HorizontalAlignment="Left" Width="210">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="TopLeft6" Content="" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Width="70" Height="70"/>
+                <Button x:Name="TopMiddle6" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="1" Height="70" FontSize="48" FontFamily="Showcard Gothic" Click="TicTacToe_Click"/>
+                <Button x:Name="TopRight6" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="2" Height="70" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+                <Button x:Name="CenterRight6" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="2" Height="70" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Grid.Row="1"/>
+                <Button x:Name="BottomLeft6" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70" Grid.Row="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+                <Button x:Name="BottomMiddle6" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70" Grid.Row="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Grid.Column="1"/>
+                <Button x:Name="CenterLeft6" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70" Grid.Row="1" Grid.RowSpan="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+                <Button x:Name="CenterMiddle6" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="1" Height="70" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Grid.Row="1"/>
+                <Button x:Name="BottomRight6" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="2" Height="70" Grid.Row="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+            </Grid>
+            <Grid x:Name="Board8" Height="210" Margin="732,545,0,90" VerticalAlignment="Center" HorizontalAlignment="Left" Width="210">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="TopLeft7" Content="" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70"/>
+                <Button x:Name="TopMiddle7" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="1" Height="70" FontSize="48" FontFamily="Showcard Gothic" Click="TicTacToe_Click"/>
+                <Button x:Name="TopRight7" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="2" Height="70" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+                <Button x:Name="CenterRight7" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="2" Height="70" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Grid.Row="1"/>
+                <Button x:Name="BottomLeft7" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70" Grid.Row="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+                <Button x:Name="BottomMiddle7" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70" Grid.Row="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Grid.Column="1"/>
+                <Button x:Name="CenterLeft7" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70" Grid.Row="1" Grid.RowSpan="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+                <Button x:Name="CenterMiddle7" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="1" Height="70" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Grid.Row="1"/>
+                <Button x:Name="BottomRight7" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="2" Height="70" Grid.Row="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+            </Grid>
+            <Grid x:Name="Board9" Height="210" Margin="1002,545,0,90" VerticalAlignment="Center" HorizontalAlignment="Left" Width="210">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="TopLeft8" Content="" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70"/>
+                <Button x:Name="TopMiddle8" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="1" Height="70" FontSize="48" FontFamily="Showcard Gothic" Click="TicTacToe_Click"/>
+                <Button x:Name="TopRight8" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="2" Height="70" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+                <Button x:Name="CenterRight8" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="2" Height="70" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Grid.Row="1"/>
+                <Button x:Name="BottomLeft8" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70" Grid.Row="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+                <Button x:Name="BottomMiddle8" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70" Grid.Row="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Grid.Column="1"/>
+                <Button x:Name="CenterLeft8" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70" Grid.Row="1" Grid.RowSpan="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+                <Button x:Name="CenterMiddle8" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="1" Height="70" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click" Grid.Row="1"/>
+                <Button x:Name="BottomRight8" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Grid.Column="2" Height="70" Grid.Row="2" FontFamily="Showcard Gothic" FontSize="48" Click="TicTacToe_Click"/>
+            </Grid>
+            <Label x:Name="Winner" Content="" HorizontalAlignment="Left" Margin="111,80,0,0" VerticalAlignment="Top" Height="34" Width="288" FontFamily="Snap ITC" FontSize="24"/>
+        </Grid>
+    </Border>
+</Window>
